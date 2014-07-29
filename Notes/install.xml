@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<mesquite>
+	<MessagesFromHome>
+		<version>1</version>
+
+		<notice><!--TSV install -->
+			<forVersion>272</forVersion>
+			<forBuildNumberAtLeast>527</forBuildNumberAtLeast>
+			<noticeNumber>1</noticeNumber>
+			<messageType>update</messageType>
+			<identity>TSV</identity>
+			<updateVersion>001</updateVersion>
+			<packageName>TreeSetViz v. 3.0</packageName>
+			<explanation>
+			<![CDATA[<img src="http://mesquiteproject.org/packages/tsv/splash.gif"><p>
+			The Tree Set Visualization package is capable of summarizing large sets of phylogenetic trees. It depicts a "tree space" using multi-dimensional scaling based on tree-to-tree distance metrics.
+			For more information, see the
+			<a href = "http://comet.lehman.cuny.edu/treeviz/">Tree Set Visualization web page</a>.
+			]]>
+			</explanation>
+				<install>
+					<location>mesquite</location>
+					<file>treeSetViz</file>
+					<url>http://mesquiteproject.org/packages/tsv/treeSetViz.zip</url>
+					<treatment>unzip</treatment>
+					<updateVersion>001</updateVersion>
+				</install>
+				<install>
+					<location>mesquite</location>
+					<file>consensusTSV</file>
+					<url>http://mesquiteproject.org/packages/tsv/consensusTSV.zip</url>
+					<treatment>unzip</treatment>
+					<updateVersion>001</updateVersion>
+				</install>
+		</notice>
+	</MessagesFromHome>
+</mesquite>
