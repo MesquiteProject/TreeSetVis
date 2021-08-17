@@ -152,8 +152,10 @@ public class RFtreeDifference_unrooted extends DistanceBetween2Trees {
 			 vw = tree.nextVertex()) {
 			lrnw = new int[4];
 			if (vw[1] == 0) { /* leaf vertex */
-				lrnw[0] = table.encoding[vw[0]]; /* leftmost is this leaf */
-				lrnw[1] = table.encoding[vw[0]]; /* rightmost is this leaf */
+				if (vw[0] >=0 && vw[0]<table.encoding.length) {  //TODO: Protection added by not clear why there was an ArrayOutOfBoundsException - DRM 7 April 2021  
+					lrnw[0] = table.encoding[vw[0]]; /* leftmost is this leaf */
+					lrnw[1] = table.encoding[vw[0]]; /* rightmost is this leaf */
+				}
 				lrnw[2] = 1; /* one leaf in this subtree */
 				lrnw[3] = 1; /* subtree's total weight is one */
 				stack.push(lrnw);
@@ -359,7 +361,8 @@ class MarkedBipartitionTable
 		while (vw != null) {
 			if (vw[1] == 0) { /* v is a leaf */
 			leafcode++;
-			encoding[vw[0]] = leafcode;
+			if (vw[0] >=0 && vw[0]<encoding.length)  //TODO: Protection added by not clear why there was an ArrayOutOfBoundsException - DRM 7 April 2021  
+				encoding[vw[0]] = leafcode;
 			R = leafcode;
 			vw = t.nextVertex();
 			} else { /* v is an internal vertex */
