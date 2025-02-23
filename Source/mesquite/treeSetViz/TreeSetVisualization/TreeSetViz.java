@@ -34,6 +34,7 @@ import mesquite.lib.taxa.Taxa;
 import mesquite.lib.tree.MesquiteTree;
 import mesquite.lib.tree.Tree;
 import mesquite.lib.tree.TreeDisplay;
+import mesquite.lib.tree.TreeDisplayHolder;
 import mesquite.lib.tree.TreeVector;
 import mesquite.lib.ui.MesquiteWindow;
 import mesquite.lib.ui.ProgressIndicator;
@@ -52,7 +53,7 @@ import java.util.BitSet;
  * Last change:  DE   05 June 2002    2:25 pm
  */
 
-public class TreeSetViz extends PointSetVisualization implements MesquiteListener {
+public class TreeSetViz extends PointSetVisualization implements MesquiteListener, TreeDisplayHolder {
 
 	/*TreeSetViz inherits the embedding display panel. The PSV originally has only that display panel added
 to its window. When TSV takes it, it will have to expand the window and add the right panel to it. The
@@ -597,6 +598,11 @@ right panel will display the trees. */
 	}
 	public void disposing(Object obj) {}
 	public boolean okToDispose(Object obj, int queryUser) {return true;}
+
+
+	public boolean allowsReorientation() {
+		return false;
+	}
 }
 
 class ConsensusTreeWindow extends MesquiteWindow {
