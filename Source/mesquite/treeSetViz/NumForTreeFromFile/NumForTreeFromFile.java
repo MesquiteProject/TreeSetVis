@@ -33,6 +33,8 @@ import javax.swing.JLabel;
 
 import mesquite.lib.*;
 import mesquite.lib.duties.NumberForTree;
+import mesquite.lib.tree.Tree;
+import mesquite.lib.ui.ExtensibleDialog;
 
 public class NumForTreeFromFile extends NumberForTree implements ActionListener, KeyListener{
 	String scoreFileContents = null;

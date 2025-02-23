@@ -25,7 +25,7 @@
  */
 package mesquite.consensusTSV.MajorityTree;
 
-import mesquite.lib.Tree;
+import mesquite.lib.tree.Tree;
 
 
 

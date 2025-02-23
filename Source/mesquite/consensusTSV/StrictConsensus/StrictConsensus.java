@@ -29,6 +29,10 @@ package mesquite.consensusTSV.StrictConsensus;
 import mesquite.consensusTSV.common.*;
 import mesquite.lib.*;
 import mesquite.lib.duties.*;
+import mesquite.lib.tree.MesquiteTree;
+import mesquite.lib.tree.Tree;
+import mesquite.lib.tree.Trees;
+
 import java.util.HashMap;
 
 public class StrictConsensus extends Consenser {

@@ -30,6 +30,13 @@ import java.awt.*; //Panel,ScrollPane, TextField, Dimension
 
 import mesquite.lib.*; //MesquiteModule,MesquiteWindow,MesquiteString,MesquiteCommand,Taxa,MesquiteInteger,Snapshot,CommandRecord,Commandable,CommandChecker,MesquiteSubmenuSpec
 import mesquite.lib.duties.*; //TreeSource,DrawTreeCoordinator,NumberFor2Trees
+import mesquite.lib.taxa.Taxa;
+import mesquite.lib.tree.MesquiteTree;
+import mesquite.lib.tree.Tree;
+import mesquite.lib.tree.TreeDisplay;
+import mesquite.lib.tree.TreeVector;
+import mesquite.lib.ui.MesquiteWindow;
+import mesquite.lib.ui.ProgressIndicator;
 
 import java.util.Map;
 import java.util.HashMap;

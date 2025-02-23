@@ -23,6 +23,7 @@ package mesquite.treeSetViz.SelectDistMatrix;
 import java.util.*;
 import mesquite.lib.*;
 import mesquite.lib.duties.*;
+import mesquite.lib.tree.Tree;
 
 public class SelectDistMatrix extends DistanceBetween2Trees {
 	private static final int INITIAL_HASHMAP_CAPACITY = 500;

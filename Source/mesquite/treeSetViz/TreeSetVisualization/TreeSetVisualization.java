@@ -32,6 +32,9 @@ package mesquite.treeSetViz.TreeSetVisualization;
 
 import mesquite.lib.*; //MesquiteModule,MesquiteWindow,MesquiteString,MesquiteCommand,Taxa,MesquiteInteger,Snapshot,CommandRecord,Commandable,CommandChecker,MesquiteSubmenuSpec
 import mesquite.lib.duties.*; //FileAssistantN,TreeSourceDefinite,DrawTreeCoordinator,DistanceBetween2Trees
+import mesquite.lib.taxa.Taxa;
+import mesquite.lib.ui.MesquiteSubmenuSpec;
+import mesquite.lib.ui.MesquiteWindow;
 
 import java.awt.Color;
 

@@ -29,6 +29,11 @@ import java.awt.*;
 
 import mesquite.lib.*;
 import mesquite.lib.duties.*;
+import mesquite.lib.tree.MesquiteTree;
+import mesquite.lib.tree.Tree;
+import mesquite.lib.tree.Trees;
+import mesquite.lib.ui.MesquiteSubmenuSpec;
+
 import java.util.*;
 
 import javax.swing.*;
@@ -406,7 +411,7 @@ public class MajorityTree extends Consenser
 			break;
 		    	//Nina - 7/20/06 - do not store PSWs between passes		
 	    }// end for
-	    if (!success) System.out.println("Retry random hashcodes.");
+	    if (!success) System.out.println("Retry random hashcodes (MajorityTree (TSV)).");
 	  } while ( !success );
 
 

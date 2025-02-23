@@ -30,6 +30,9 @@ package mesquite.treeSetViz.TreeSetVisualization;
 
 import mesquite.lib.*; //MesquiteWindow, MesquiteProject, MesquiteModule
 import mesquite.lib.duties.*;
+import mesquite.lib.ui.MesquiteSubmenuSpec;
+import mesquite.lib.ui.MesquiteWindow;
+import mesquite.lib.ui.TextRotator;
 
 import java.awt.*;
 import java.awt.event.*;
